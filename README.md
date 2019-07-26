@@ -4,7 +4,7 @@ Sentences encoding infrastructure.
 ## Client
 When a model is trained, a local pretrained model is used.
 
-However, when a classification is processed, the featurizer calls the remote sentences encoding server to get the sentence embedding of a sentence.
+However, when a classification is processed, the featurizer calls a local sentences encoding server to get the sentence embedding of a sentence.
 
 **Please set the environment variables below** 
 
