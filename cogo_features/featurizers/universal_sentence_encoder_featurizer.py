@@ -26,11 +26,6 @@ class UniversalSentenceEncoderFeaturizer(Featurizer):
 
 
     def process(self, message, **kwargs):
-        print('*****************************************')
-        print('*****************************************')
-        print('get the feature of the sentence from the remote!!!!!!!')
-        print('*****************************************')
-        print('*****************************************')
         feature_vector = fetch_feature_remotely(message.text)
         # Concatenate the feature vector with any existing text features
         features = self._combine_with_existing_text_features(message, feature_vector)
