@@ -1,10 +1,9 @@
 # Cogo Features
-Sentences encoding infrastructure.
+This is a library of custom Rasa NLU components that uses sentences encoding infrastructure.
 
-## Client
 When a model is trained, a local pretrained model is used.
 
-However, when a classification is processed, the featurizer calls a local sentences encoding server to get the sentence embedding of a sentence.
+However, when a classification is processed, the featurizer calls its sentences encoding server to get the sentence embedding.
 
 **Please set the environment variables below** 
 
@@ -16,6 +15,3 @@ Speficy the module in the rasa pipline configs file as below:
 ```
 - name: "cogo_features.featurizers.UniversalSentenceEncoderFeaturizer"
 ```
-
-## Server
-In progress...
